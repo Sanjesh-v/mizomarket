@@ -61,16 +61,105 @@ if not required_buyers.issubset(buyers.columns):
 # STYLING
 # ------------------------------------------
 
+
+# ------------------------------------------
+# PROFESSIONAL MIZOMARKET THEME
+# ------------------------------------------
+
 st.markdown("""
 <style>
+
+/* Main application background */
+.stApp {
+    background-color: #F7F8F4;
+    color: #26352B;
+}
+
+/* Main headings */
 h1, h2, h3 {
-    color: #214d36;
+    color: #174D35 !important;
+    font-weight: 700 !important;
 }
+
+/* Main body text */
+p, label, .stMarkdown {
+    color: #34483A;
+}
+
+/* Sidebar background */
 [data-testid="stSidebar"] {
-    background-color: #edf3ec;
+    background-color: #174D35 !important;
 }
+
+/* Sidebar text */
+[data-testid="stSidebar"] * {
+    color: #FFFFFF !important;
+}
+
+/* Sidebar title */
+[data-testid="stSidebar"] h1,
+[data-testid="stSidebar"] h2,
+[data-testid="stSidebar"] h3 {
+    color: #FFFFFF !important;
+}
+
+/* Sidebar radio navigation labels */
+[data-testid="stSidebar"] [data-testid="stRadio"] label {
+    color: #FFFFFF !important;
+    font-weight: 500;
+}
+
+/* Sidebar navigation hover */
+[data-testid="stSidebar"] [data-testid="stRadio"] label:hover {
+    color: #B9E5C8 !important;
+}
+
+/* Sidebar separators */
+[data-testid="stSidebar"] hr {
+    border-color: #527D63;
+}
+
+/* Metric cards */
+[data-testid="stMetric"] {
+    background-color: #FFFFFF;
+    border: 1px solid #DCE7DC;
+    padding: 18px;
+    border-radius: 12px;
+}
+
+/* Metric values */
+[data-testid="stMetricValue"] {
+    color: #174D35 !important;
+    font-weight: 700;
+}
+
+/* Dataframes */
+[data-testid="stDataFrame"] {
+    border: 1px solid #DCE7DC;
+    border-radius: 10px;
+}
+
+/* Buttons */
+.stButton > button {
+    background-color: #28764C;
+    color: #FFFFFF;
+    border-radius: 8px;
+    border: none;
+}
+
+/* Success and information messages */
+.stAlert {
+    border-radius: 10px;
+}
+
+/* Sidebar radio accent */
+[data-testid="stSidebar"] input[type="radio"] {
+    accent-color: #A7DDB8;
+}
+
 </style>
 """, unsafe_allow_html=True)
+
 
 # ------------------------------------------
 # HEADER
